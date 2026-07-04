@@ -462,7 +462,34 @@ $(document).ready(function () {
     }
   });
 
-  renderSchedule("Wednesday");
+  const today = new Date();
+  const dayOfWeek = today.getDay();
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  const currentDay = days[dayOfWeek];
+
+  $(".sch-day-btn").removeClass("sch-day-active");
+  var $currentBtn = $(".sch-day-btn").filter(function () {
+    return $(this).data("day") === currentDay;
+  });
+
+  if ($currentBtn.length && scheduleData[currentDay]) {
+    $currentBtn.addClass("sch-day-active");
+    renderSchedule(currentDay);
+  } else {
+    var $fallbackBtn = $(".sch-day-btn").filter(function () {
+      return $(this).data("day") === "Monday";
+    });
+    $fallbackBtn.addClass("sch-day-active");
+    renderSchedule("Monday");
+  }
 });
 
 (function () {
