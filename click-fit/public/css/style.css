@@ -569,6 +569,17 @@ footer {
   .schedule-section {
     background-attachment: scroll;
   }
+  footer .container {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  footer > div:first-child .container {
+    gap: 0.75rem;
+    justify-content: flex-start !important;
+  }
+  footer .row.g-5 {
+    row-gap: 2.5rem;
+  }
 }
 
 @keyframes fadeSlideUp {
