@@ -1,711 +1,1503 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ClickFit | Premium Fitness & CrossFit Facility</title>
-    <meta name="description"
-        content="ClickFit is a premium CrossFit and fitness facility offering expert-led strength, HIIT, mobility and endurance classes. Join 2,400+ members transforming their lives.">
-    <meta name="keywords"
-        content="clickfit, crossfit, gym, fitness classes, HIIT, strength training, mobility, personal training, fitness facility">
-    <meta name="author" content="ClickFit">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://clickfit.com/">
+    <meta
+      name="description"
+      content="ClickFit is a premium CrossFit and fitness facility offering expert-led strength, HIIT, mobility and endurance classes. Join 2,400+ members transforming their lives."
+    />
+    <meta
+      name="keywords"
+      content="clickfit, crossfit, gym, fitness classes, HIIT, strength training, mobility, personal training, fitness facility"
+    />
+    <meta name="author" content="ClickFit" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://clickfit.com/" />
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://clickfit.com/">
-    <meta property="og:title" content="ClickFit | Premium Fitness & CrossFit Facility">
-    <meta property="og:description"
-        content="Expert-led strength, HIIT, mobility and endurance classes. Join 2,400+ members at ClickFit.">
-    <meta property="og:image"
-        content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200&auto=format&fit=crop">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://clickfit.com/" />
+    <meta
+      property="og:title"
+      content="ClickFit | Premium Fitness & CrossFit Facility"
+    />
+    <meta
+      property="og:description"
+      content="Expert-led strength, HIIT, mobility and endurance classes. Join 2,400+ members at ClickFit."
+    />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200&auto=format&fit=crop"
+    />
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ClickFit | Premium Fitness & CrossFit Facility">
-    <meta name="twitter:description"
-        content="Expert-led strength, HIIT, mobility and endurance classes. Join 2,400+ members at ClickFit.">
-    <meta name="twitter:image"
-        content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200&auto=format&fit=crop">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="ClickFit | Premium Fitness & CrossFit Facility"
+    />
+    <meta
+      name="twitter:description"
+      content="Expert-led strength, HIIT, mobility and endurance classes. Join 2,400+ members at ClickFit."
+    />
+    <meta
+      name="twitter:image"
+      content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200&auto=format&fit=crop"
+    />
 
-
-    <meta name="theme-color" content="#00f0ff">
-
-    <link rel="icon" type="image/svg+xml"
-        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23080c14'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial Black,sans-serif' font-weight='900' font-size='14' fill='%2300f0ff'%3ECF%3C/text%3E%3C/svg%3E">
-    <link rel="shortcut icon"
-        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23080c14'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial Black,sans-serif' font-weight='900' font-size='14' fill='%2300f0ff'%3ECF%3C/text%3E%3C/svg%3E">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="theme-color" content="#00f0ff" />
 
     <link
-        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@300;400;600;700;800;900&display=swap"
-        rel="stylesheet">
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23080c14'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial Black,sans-serif' font-weight='900' font-size='14' fill='%2300f0ff'%3ECF%3C/text%3E%3C/svg%3E"
+    />
+    <link
+      rel="shortcut icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23080c14'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial Black,sans-serif' font-weight='900' font-size='14' fill='%2300f0ff'%3ECF%3C/text%3E%3C/svg%3E"
+    />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<body>
-    <div id="preloader" class="d-flex align-items-center justify-content-center">
-        <div class="loader-text fs-1 fw-bolder text-white">
-            <span class="letter">C</span><span class="letter">L</span><span class="letter">I</span><span
-                class="letter">C</span><span class="letter">K</span><span class="letter text-accent">F</span><span
-                class="letter text-accent">I</span><span class="letter text-accent">T</span>
-        </div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div
+      id="preloader"
+      class="d-flex align-items-center justify-content-center"
+    >
+      <div class="loader-text fs-1 fw-bolder text-white">
+        <span class="letter">C</span><span class="letter">L</span
+        ><span class="letter">I</span><span class="letter">C</span
+        ><span class="letter">K</span><span class="letter text-accent">F</span
+        ><span class="letter text-accent">I</span
+        ><span class="letter text-accent">T</span>
+      </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom fixed-top" data-aos="fade-down" role="navigation"
-        aria-label="Main navigation">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-white" href="#" aria-label="ClickFit Home">CLICK<span
-                    class="text-accent">FIT</span></a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center gap-1">
-                    <li class="nav-item"><a class="nav-link active" href="#" aria-current="page">Home</a></li>
-                    <li class="nav-item"><a class="nav-link mock-link" href="/programs">Programs</a></li>
-                    <li class="nav-item"><a class="nav-link mock-link" href="/schedule">Schedule</a></li>
-                    <li class="nav-item"><a class="nav-link mock-link" href="/trainers">Trainers</a></li>
-                    <li class="nav-item"><a class="nav-link mock-link" href="/gallery">Gallery</a></li>
-                    <li class="nav-item ms-lg-3">
-                        <a class="btn btn-outline-accent mock-link" href="/join">Join Now</a>
-                    </li>
-                </ul>
-            </div>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark-custom fixed-top"
+      data-aos="fade-down"
+      role="navigation"
+      aria-label="Main navigation"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand fw-bold text-white"
+          href="#"
+          aria-label="ClickFit Home"
+          >CLICK<span class="text-accent">FIT</span></a
+        >
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav align-items-center gap-1">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mock-link" href="/programs">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mock-link" href="/schedule">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mock-link" href="/trainers">Trainers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mock-link" href="/gallery">Gallery</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-outline-accent mock-link" href="/join"
+                >Join Now</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <header class="hero d-flex align-items-center position-relative">
-        <div class="container text-start" data-aos="zoom-in" data-aos-duration="1000">
-            <h1 class="hero-title text-white"><span class="text-outline">Ultimate</span><br><span
-                    class="text-accent">Crossfit</span><br>Facility</h1>
-        </div>
+      <div
+        class="container text-start"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
+        <h1 class="hero-title text-white">
+          <span class="text-outline">Ultimate</span><br /><span
+            class="text-accent"
+            >Crossfit</span
+          ><br />Facility
+        </h1>
+      </div>
 
-        <a href="#catalog" class="scroll-down-btn position-absolute bottom-0 end-0 m-4 m-md-5 text-decoration-none">
-            <div class="scroll-circle d-flex align-items-center justify-content-center bg-accent text-dark fs-4">
-                <i class="fa-solid fa-arrow-down"></i>
-            </div>
-            <svg class="scroll-text-svg position-absolute top-50 start-50 translate-middle" viewBox="0 0 100 100"
-                width="120" height="120">
-                <defs>
-                    <path id="circlePath" d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0"></path>
-                </defs>
-                <text font-size="11" fill="white" font-weight="600" letter-spacing="3.5">
-                    <textPath href="#circlePath" startOffset="0%">
-                        SCROLL DOWN SCROLL DOWN
-                    </textPath>
-                </text>
-            </svg>
-        </a>
+      <a
+        href="#catalog"
+        class="scroll-down-btn position-absolute bottom-0 end-0 m-4 m-md-5 text-decoration-none"
+      >
+        <div
+          class="scroll-circle d-flex align-items-center justify-content-center bg-accent text-dark fs-4"
+        >
+          <i class="fa-solid fa-arrow-down"></i>
+        </div>
+        <svg
+          class="scroll-text-svg position-absolute top-50 start-50 translate-middle"
+          viewBox="0 0 100 100"
+          width="120"
+          height="120"
+        >
+          <defs>
+            <path
+              id="circlePath"
+              d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0"
+            ></path>
+          </defs>
+          <text
+            font-size="11"
+            fill="white"
+            font-weight="600"
+            letter-spacing="3.5"
+          >
+            <textPath href="#circlePath" startOffset="0%">
+              SCROLL DOWN SCROLL DOWN
+            </textPath>
+          </text>
+        </svg>
+      </a>
     </header>
 
-    <section class="schedule-section position-relative border-top border-dark" id="schedule"
-        style="background: linear-gradient(rgba(8,12,20,0.92), rgba(8,12,20,0.97)), url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1920&auto=format&fit=crop') center/cover fixed; padding: 6rem 0;">
-        <div class="container">
-
-            <div class="row align-items-end mb-5">
-                <div class="col-md-7">
-                    <span class="section-label">Training Timetable</span>
-                    <h2 class="display-4 fw-bolder text-white text-uppercase lh-1 mb-0">Pick Your <span
-                            class="text-accent">Class</span></h2>
-                </div>
-                <div class="col-md-5 mt-4 mt-md-0">
-                    <p class="text-secondary mb-0" style="font-size: 0.95rem; line-height: 1.7;">Every session is led by
-                        a certified coach. No two classes are the same &mdash; show up, push hard, and see the
-                        difference.</p>
-                </div>
-            </div>
-
-            <div class="d-flex flex-wrap gap-2 mb-5 border-bottom border-dark pb-4">
-                <button class="btn text-secondary fw-bold text-uppercase px-4 py-2" data-day="Monday"
-                    style="font-size: 0.78rem; letter-spacing: 2px; border: 1px solid #1e2535;">Monday</button>
-                <button class="btn text-secondary fw-bold text-uppercase px-4 py-2" data-day="Tuesday"
-                    style="font-size: 0.78rem; letter-spacing: 2px; border: 1px solid #1e2535;">Tuesday</button>
-                <button class="btn fw-bold text-uppercase px-4 py-2" data-day="Wednesday"
-                    style="font-size: 0.78rem; letter-spacing: 2px; background-color: var(--accent); color: #000;">Wednesday</button>
-                <button class="btn text-secondary fw-bold text-uppercase px-4 py-2" data-day="Thursday"
-                    style="font-size: 0.78rem; letter-spacing: 2px; border: 1px solid #1e2535;">Thursday</button>
-                <button class="btn text-secondary fw-bold text-uppercase px-4 py-2" data-day="Friday"
-                    style="font-size: 0.78rem; letter-spacing: 2px; border: 1px solid #1e2535;">Friday</button>
-                <button class="btn text-secondary fw-bold text-uppercase px-4 py-2" data-day="Saturday"
-                    style="font-size: 0.78rem; letter-spacing: 2px; border: 1px solid #1e2535;">Saturday</button>
-            </div>
-
-            <div class="row g-3" id="schedule-grid">
-            </div>
-            <div
-                class="mt-5 pt-3 border-top border-dark d-flex justify-content-between align-items-center flex-wrap gap-3">
-                <p class="text-secondary mb-0" style="font-size: 0.88rem;">Can't make it this week? View the full
-                    monthly timetable online.</p>
-                <a href="#" class="btn btn-outline-accent mock-link">Full Schedule &rarr;</a>
-            </div>
-
+    <section
+      class="schedule-section position-relative border-top border-dark"
+      id="schedule"
+      style="
+        background:
+          linear-gradient(rgba(8, 12, 20, 0.92), rgba(8, 12, 20, 0.97)),
+          url(&quot;https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1920&auto=format&fit=crop&quot;)
+            center/cover fixed;
+        padding: 6rem 0;
+      "
+    >
+      <div class="container">
+        <div class="row align-items-end mb-5">
+          <div class="col-md-7">
+            <span class="section-label">Training Timetable</span>
+            <h2 class="display-4 fw-bolder text-white text-uppercase lh-1 mb-0">
+              Pick Your <span class="text-accent">Class</span>
+            </h2>
+          </div>
+          <div class="col-md-5 mt-4 mt-md-0">
+            <p
+              class="text-secondary mb-0"
+              style="font-size: 0.95rem; line-height: 1.7"
+            >
+              Every session is led by a certified coach. No two classes are the
+              same &mdash; show up, push hard, and see the difference.
+            </p>
+          </div>
         </div>
+
+        <div class="d-flex flex-wrap gap-2 mb-5 border-bottom border-dark pb-4">
+          <button
+            class="btn text-secondary fw-bold text-uppercase px-4 py-2"
+            data-day="Monday"
+            style="
+              font-size: 0.78rem;
+              letter-spacing: 2px;
+              border: 1px solid #1e2535;
+            "
+          >
+            Monday
+          </button>
+          <button
+            class="btn text-secondary fw-bold text-uppercase px-4 py-2"
+            data-day="Tuesday"
+            style="
+              font-size: 0.78rem;
+              letter-spacing: 2px;
+              border: 1px solid #1e2535;
+            "
+          >
+            Tuesday
+          </button>
+          <button
+            class="btn fw-bold text-uppercase px-4 py-2"
+            data-day="Wednesday"
+            style="
+              font-size: 0.78rem;
+              letter-spacing: 2px;
+              background-color: var(--accent);
+              color: #000;
+            "
+          >
+            Wednesday
+          </button>
+          <button
+            class="btn text-secondary fw-bold text-uppercase px-4 py-2"
+            data-day="Thursday"
+            style="
+              font-size: 0.78rem;
+              letter-spacing: 2px;
+              border: 1px solid #1e2535;
+            "
+          >
+            Thursday
+          </button>
+          <button
+            class="btn text-secondary fw-bold text-uppercase px-4 py-2"
+            data-day="Friday"
+            style="
+              font-size: 0.78rem;
+              letter-spacing: 2px;
+              border: 1px solid #1e2535;
+            "
+          >
+            Friday
+          </button>
+          <button
+            class="btn text-secondary fw-bold text-uppercase px-4 py-2"
+            data-day="Saturday"
+            style="
+              font-size: 0.78rem;
+              letter-spacing: 2px;
+              border: 1px solid #1e2535;
+            "
+          >
+            Saturday
+          </button>
+        </div>
+
+        <div class="row g-3" id="schedule-grid"></div>
+        <div
+          class="mt-5 pt-3 border-top border-dark d-flex justify-content-between align-items-center flex-wrap gap-3"
+        >
+          <p class="text-secondary mb-0" style="font-size: 0.88rem">
+            Can't make it this week? View the full monthly timetable online.
+          </p>
+          <a href="#" class="btn btn-outline-accent mock-link"
+            >Full Schedule &rarr;</a
+          >
+        </div>
+      </div>
     </section>
 
     <section id="catalog" class="catalog-section py-5 my-5 bg-darker">
-        <div class="container py-5">
-            <div class="row mb-5" data-aos="fade-right">
-                <div class="col-md-6">
-                    <h5 class="text-accent text-uppercase fw-bold">Real-time Gear</h5>
-                    <h2 class="display-4 fw-bolder text-white text-uppercase">Gear <span
-                            class="text-accent">Catalog</span></h2>
-                </div>
-                <div class="col-md-6 d-flex align-items-center">
-                    <p class="text-secondary">Real-time product data pulled directly from our inventory API. Browse the
-                        latest additions to the ClickFit gear lineup.</p>
-                </div>
-            </div>
-
-            <div id="api-grid" class="row g-4">
-            </div>
+      <div class="container py-5">
+        <div class="row mb-5" data-aos="fade-right">
+          <div class="col-md-6">
+            <h5 class="text-accent text-uppercase fw-bold">Real-time Gear</h5>
+            <h2 class="display-4 fw-bolder text-white text-uppercase">
+              Gear <span class="text-accent">Catalog</span>
+            </h2>
+          </div>
+          <div class="col-md-6 d-flex align-items-center">
+            <p class="text-secondary">
+              Real-time product data pulled directly from our inventory API.
+              Browse the latest additions to the ClickFit gear lineup.
+            </p>
+          </div>
         </div>
+
+        <div id="api-grid" class="row g-4"></div>
+      </div>
     </section>
 
-    <section class="services-section" data-aos="fade-up" style="padding: 6rem 0;">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-end border-bottom border-dark pb-4 mb-5">
+    <section
+      class="services-section"
+      data-aos="fade-up"
+      style="padding: 6rem 0"
+    >
+      <div class="container">
+        <div
+          class="d-flex justify-content-between align-items-end border-bottom border-dark pb-4 mb-5"
+        >
+          <div>
+            <span class="section-label">Our Coaches</span>
+            <h2 class="display-5 fw-bolder text-white text-uppercase mb-0">
+              Meet The <span class="text-accent">Team</span>
+            </h2>
+          </div>
+          <a
+            href="#"
+            class="text-secondary text-decoration-none fw-bold small text-uppercase mock-link hover-accent d-none d-md-block"
+            style="letter-spacing: 1px"
+            >View All &rarr;</a
+          >
+        </div>
+
+        <div class="row g-0">
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="coach-panel position-relative overflow-hidden"
+              style="height: 420px"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=800&auto=format&fit=crop"
+                class="w-100 h-100 position-absolute top-0 start-0"
+                style="object-fit: cover; filter: grayscale(20%)"
+                alt="Divina Oluwa"
+              />
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100"
+                style="
+                  background: linear-gradient(
+                    to top,
+                    rgba(8, 12, 20, 0.95) 0%,
+                    rgba(8, 12, 20, 0.2) 50%,
+                    transparent 100%
+                  );
+                "
+              ></div>
+              <div class="position-absolute top-0 start-0 p-3">
+                <span
+                  class="fw-bolder"
+                  style="
+                    font-size: 0.7rem;
+                    letter-spacing: 3px;
+                    color: var(--accent);
+                    font-family: &quot;JetBrains Mono&quot;, monospace;
+                  "
+                  >01</span
+                >
+              </div>
+              <div class="position-absolute bottom-0 start-0 w-100 p-4">
+                <span
+                  class="d-inline-block mb-2 fw-bold text-dark px-2 py-1"
+                  style="
+                    background-color: var(--accent);
+                    font-size: 0.65rem;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                  "
+                  >Strength</span
+                >
+                <h4
+                  class="text-white fw-bolder text-uppercase mb-1"
+                  style="font-size: 1.1rem; letter-spacing: 1px"
+                >
+                  Divina Oluwa
+                </h4>
+                <p class="text-secondary small mb-3">
+                  Former IFBB Pro. 15 years competitive lifting. Hypertrophy
+                  &amp; raw power.
+                </p>
+                <a
+                  href="#"
+                  class="text-accent text-decoration-none fw-bold mock-link"
+                  style="
+                    font-size: 0.75rem;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                  "
+                  >Profile &rarr;</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="coach-panel position-relative overflow-hidden"
+              style="height: 420px"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?q=80&w=800&auto=format&fit=crop"
+                class="w-100 h-100 position-absolute top-0 start-0"
+                style="object-fit: cover; filter: grayscale(20%)"
+                alt="Mei Chen"
+              />
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100"
+                style="
+                  background: linear-gradient(
+                    to top,
+                    rgba(8, 12, 20, 0.95) 0%,
+                    rgba(8, 12, 20, 0.2) 50%,
+                    transparent 100%
+                  );
+                "
+              ></div>
+              <div class="position-absolute top-0 start-0 p-3">
+                <span
+                  class="fw-bolder"
+                  style="
+                    font-size: 0.7rem;
+                    letter-spacing: 3px;
+                    color: var(--accent);
+                    font-family: &quot;JetBrains Mono&quot;, monospace;
+                  "
+                  >02</span
+                >
+              </div>
+              <div class="position-absolute bottom-0 start-0 w-100 p-4">
+                <span
+                  class="d-inline-block mb-2 fw-bold text-white px-2 py-1"
+                  style="
+                    background-color: #ff6b35;
+                    font-size: 0.65rem;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                  "
+                  >HIIT</span
+                >
+                <h4
+                  class="text-white fw-bolder text-uppercase mb-1"
+                  style="font-size: 1.1rem; letter-spacing: 1px"
+                >
+                  Mei Chen
+                </h4>
+                <p class="text-secondary small mb-3">
+                  Former Olympic sprinter. HIIT &amp; metabolic conditioning
+                  specialist.
+                </p>
+                <a
+                  href="#"
+                  class="text-accent text-decoration-none fw-bold mock-link"
+                  style="
+                    font-size: 0.75rem;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                  "
+                  >Profile &rarr;</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="coach-panel position-relative overflow-hidden"
+              style="height: 420px"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=800&auto=format&fit=crop"
+                class="w-100 h-100 position-absolute top-0 start-0"
+                style="object-fit: cover; filter: grayscale(20%)"
+                alt="Carlos Mendoza"
+              />
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100"
+                style="
+                  background: linear-gradient(
+                    to top,
+                    rgba(8, 12, 20, 0.95) 0%,
+                    rgba(8, 12, 20, 0.2) 50%,
+                    transparent 100%
+                  );
+                "
+              ></div>
+              <div class="position-absolute top-0 start-0 p-3">
+                <span
+                  class="fw-bolder"
+                  style="
+                    font-size: 0.7rem;
+                    letter-spacing: 3px;
+                    color: var(--accent);
+                    font-family: &quot;JetBrains Mono&quot;, monospace;
+                  "
+                  >03</span
+                >
+              </div>
+              <div class="position-absolute bottom-0 start-0 w-100 p-4">
+                <span
+                  class="d-inline-block mb-2 fw-bold text-white px-2 py-1"
+                  style="
+                    background-color: #7c5cbf;
+                    font-size: 0.65rem;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                  "
+                  >Mobility</span
+                >
+                <h4
+                  class="text-white fw-bolder text-uppercase mb-1"
+                  style="font-size: 1.1rem; letter-spacing: 1px"
+                >
+                  Carlos Mendoza
+                </h4>
+                <p class="text-secondary small mb-3">
+                  Master mobility specialist. Movement mechanics &amp; joint
+                  health.
+                </p>
+                <a
+                  href="#"
+                  class="text-accent text-decoration-none fw-bold mock-link"
+                  style="
+                    font-size: 0.75rem;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                  "
+                  >Profile &rarr;</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="coach-panel position-relative overflow-hidden"
+              style="height: 420px"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=800&auto=format&fit=crop"
+                class="w-100 h-100 position-absolute top-0 start-0"
+                style="object-fit: cover; filter: grayscale(20%)"
+                alt="Sarah Jenkins"
+              />
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100"
+                style="
+                  background: linear-gradient(
+                    to top,
+                    rgba(8, 12, 20, 0.95) 0%,
+                    rgba(8, 12, 20, 0.2) 50%,
+                    transparent 100%
+                  );
+                "
+              ></div>
+              <div class="position-absolute top-0 start-0 p-3">
+                <span
+                  class="fw-bolder"
+                  style="
+                    font-size: 0.7rem;
+                    letter-spacing: 3px;
+                    color: var(--accent);
+                    font-family: &quot;JetBrains Mono&quot;, monospace;
+                  "
+                  >04</span
+                >
+              </div>
+              <div class="position-absolute bottom-0 start-0 w-100 p-4">
+                <span
+                  class="d-inline-block mb-2 fw-bold text-white px-2 py-1"
+                  style="
+                    background-color: #2ea8a0;
+                    font-size: 0.65rem;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                  "
+                  >Endurance</span
+                >
+                <h4
+                  class="text-white fw-bolder text-uppercase mb-1"
+                  style="font-size: 1.1rem; letter-spacing: 1px"
+                >
+                  Sarah Jenkins
+                </h4>
+                <p class="text-secondary small mb-3">
+                  Ironman champion. USATF certified. Builds world-class aerobic
+                  capacity.
+                </p>
+                <a
+                  href="#"
+                  class="text-accent text-decoration-none fw-bold mock-link"
+                  style="
+                    font-size: 0.75rem;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                  "
+                  >Profile &rarr;</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="upload-section"
+      data-aos="fade-up"
+      style="background-color: var(--bg-darker); padding: 6rem 0"
+    >
+      <div class="container">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="position-relative" style="height: 520px">
+              <div
+                class="position-absolute"
+                style="
+                  top: 0;
+                  left: 0;
+                  width: 70%;
+                  height: 60%;
+                  overflow: hidden;
+                  border: 2px solid var(--border);
+                "
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=600&auto=format&fit=crop"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    filter: grayscale(15%);
+                  "
+                  alt="Gym progress 1"
+                />
+              </div>
+              <div
+                class="position-absolute"
+                style="
+                  bottom: 0;
+                  right: 0;
+                  width: 60%;
+                  height: 50%;
+                  overflow: hidden;
+                  border: 2px solid var(--border);
+                "
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=600&auto=format&fit=crop"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    filter: grayscale(15%);
+                  "
+                  alt="Gym progress 2"
+                />
+              </div>
+              <div
+                class="position-absolute"
+                style="
+                  top: 8%;
+                  right: 0;
+                  width: 28%;
+                  height: 32%;
+                  overflow: hidden;
+                  border: 2px solid var(--border);
+                "
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=300&auto=format&fit=crop"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    filter: grayscale(15%);
+                  "
+                  alt="Gym progress 3"
+                />
+              </div>
+              <div
+                class="position-absolute"
+                style="
+                  bottom: 2%;
+                  left: 0;
+                  width: 27%;
+                  height: 32%;
+                  overflow: hidden;
+                  border: 2px solid var(--border);
+                "
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=300&auto=format&fit=crop"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    filter: grayscale(15%);
+                  "
+                  alt="Gym progress 4"
+                />
+              </div>
+              <div
+                class="position-absolute"
+                style="
+                  top: -12px;
+                  left: -12px;
+                  width: 60px;
+                  height: 60px;
+                  border-top: 3px solid var(--accent);
+                  border-left: 3px solid var(--accent);
+                "
+              ></div>
+              <div
+                class="position-absolute"
+                style="
+                  bottom: -12px;
+                  right: -12px;
+                  width: 60px;
+                  height: 60px;
+                  border-bottom: 3px solid var(--accent);
+                  border-right: 3px solid var(--accent);
+                "
+              ></div>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <span class="section-label">Community</span>
+            <h2 class="display-5 fw-bolder text-white text-uppercase mb-2">
+              Share Your <span class="text-accent">Progress</span>
+            </h2>
+            <p class="text-secondary mb-5" style="max-width: 520px">
+              Drop your workout photos below to be featured on our community
+              wall. Every week the best shot gets pinned to the top.
+            </p>
+            <div
+              id="drop-zone"
+              class="drop-zone p-5 border-dashed"
+              role="button"
+              aria-label="File upload area"
+              tabindex="0"
+            >
+              <i
+                class="fa-solid fa-cloud-arrow-up fa-2x text-accent mb-3"
+                aria-hidden="true"
+              ></i>
+              <h5 class="text-white fw-bold text-uppercase mb-1">
+                Drag &amp; Drop Images Here
+              </h5>
+              <p class="text-secondary small mb-0">
+                or click to browse &mdash; JPG, PNG, WEBP accepted
+              </p>
+              <input
+                type="file"
+                id="file-input"
+                multiple
+                accept="image/*"
+                class="d-none"
+                aria-label="Select images to upload"
+              />
+            </div>
+            <div
+              id="image-preview-container"
+              class="d-flex flex-wrap mt-4 gap-3"
+            ></div>
+            <button
+              id="upload-btn"
+              class="btn btn-accent mt-4 d-none text-uppercase fw-bold px-4 py-2"
+              aria-label="Upload selected images"
+            >
+              Upload Images
+            </button>
+            <div
+              id="upload-status"
+              class="mt-3"
+              role="status"
+              aria-live="polite"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="reviews-section"
+      data-aos="fade-up"
+      style="background-color: var(--bg-darker); padding: 6rem 0"
+    >
+      <div class="container">
+        <div class="row align-items-end mb-5">
+          <div class="col-md-7">
+            <span class="section-label">Member Stories</span>
+            <h2 class="display-4 fw-bolder text-white text-uppercase lh-1 mb-0">
+              Proven <span class="text-accent">Results</span>
+            </h2>
+          </div>
+          <div class="col-md-5 mt-4 mt-md-0">
+            <p
+              class="text-secondary mb-0"
+              style="font-size: 0.9rem; line-height: 1.7"
+            >
+              Don't take our word for it. Over 2,400 members have trained here
+              &mdash; this is what they said.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-0 mb-5 border border-dark">
+          <div class="col-4 p-4 border-end border-dark text-center">
+            <div
+              class="text-accent fw-bolder"
+              style="font-size: 2.5rem; line-height: 1"
+            >
+              98%
+            </div>
+            <p
+              class="text-secondary small text-uppercase fw-bold mt-2 mb-0"
+              style="letter-spacing: 1px"
+            >
+              Would Recommend
+            </p>
+          </div>
+          <div class="col-4 p-4 border-end border-dark text-center">
+            <div
+              class="text-white fw-bolder"
+              style="font-size: 2.5rem; line-height: 1"
+            >
+              2,400<span class="text-accent">+</span>
+            </div>
+            <p
+              class="text-secondary small text-uppercase fw-bold mt-2 mb-0"
+              style="letter-spacing: 1px"
+            >
+              Active Members
+            </p>
+          </div>
+          <div class="col-4 p-4 text-center">
+            <div
+              class="text-white fw-bolder"
+              style="font-size: 2.5rem; line-height: 1"
+            >
+              4.9<span class="text-accent">★</span>
+            </div>
+            <p
+              class="text-secondary small text-uppercase fw-bold mt-2 mb-0"
+              style="letter-spacing: 1px"
+            >
+              Average Rating
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div
+              class="p-5 h-100"
+              style="
+                background-color: var(--bg-card);
+                border: 1px solid var(--border);
+                border-left: 4px solid var(--accent);
+              "
+            >
+              <div
+                class="text-accent mb-4"
+                style="
+                  font-size: 0.75rem;
+                  letter-spacing: 3px;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                "
+              >
+                Featured Review
+              </div>
+              <p
+                class="text-white mb-5"
+                style="font-size: 1.3rem; line-height: 1.6; font-weight: 300"
+              >
+                &ldquo;I came in sceptical. I'm leaving every session with more
+                than I expected. ClickFit isn't about hype &mdash; it's about
+                systems, accountability, and relentless improvement. This place
+                genuinely changed how I approach my health.&rdquo;
+              </p>
+              <div class="d-flex align-items-center gap-3">
+                <div
+                  style="
+                    width: 48px;
+                    height: 48px;
+                    background-color: var(--accent);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 900;
+                    color: #000;
+                    font-size: 1.1rem;
+                  "
+                >
+                  JL
+                </div>
                 <div>
-                    <span class="section-label">Our Coaches</span>
-                    <h2 class="display-5 fw-bolder text-white text-uppercase mb-0">Meet The <span
-                            class="text-accent">Team</span></h2>
+                  <div
+                    class="text-white fw-bold text-uppercase"
+                    style="letter-spacing: 1px"
+                  >
+                    Jordan L.
+                  </div>
+                  <div class="text-secondary small">
+                    Product Manager &mdash; Member since Jan 2024
+                  </div>
                 </div>
-                <a href="#"
-                    class="text-secondary text-decoration-none fw-bold small text-uppercase mock-link hover-accent d-none d-md-block"
-                    style="letter-spacing: 1px;">View All &rarr;</a>
+                <div class="ms-auto text-accent" style="font-size: 0.85rem">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
             </div>
+          </div>
 
-            <div class="row g-0">
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="coach-panel position-relative overflow-hidden" style="height: 420px;">
-                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=800&auto=format&fit=crop"
-                            class="w-100 h-100 position-absolute top-0 start-0"
-                            style="object-fit: cover; filter: grayscale(20%);" alt="Divina Oluwa">
-                        <div class="position-absolute top-0 start-0 w-100 h-100"
-                            style="background: linear-gradient(to top, rgba(8,12,20,0.95) 0%, rgba(8,12,20,0.2) 50%, transparent 100%);">
-                        </div>
-                        <div class="position-absolute top-0 start-0 p-3">
-                            <span class="fw-bolder"
-                                style="font-size: 0.7rem; letter-spacing: 3px; color: var(--accent); font-family: 'JetBrains Mono', monospace;">01</span>
-                        </div>
-                        <div class="position-absolute bottom-0 start-0 w-100 p-4">
-                            <span class="d-inline-block mb-2 fw-bold text-dark px-2 py-1"
-                                style="background-color: var(--accent); font-size: 0.65rem; letter-spacing: 2px; text-transform: uppercase;">Strength</span>
-                            <h4 class="text-white fw-bolder text-uppercase mb-1"
-                                style="font-size: 1.1rem; letter-spacing: 1px;">Divina Oluwa</h4>
-                            <p class="text-secondary small mb-3">Former IFBB Pro. 15 years competitive lifting.
-                                Hypertrophy &amp; raw power.</p>
-                            <a href="#" class="text-accent text-decoration-none fw-bold mock-link"
-                                style="font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase;">Profile
-                                &rarr;</a>
-                        </div>
+          <div class="col-lg-6">
+            <div class="d-flex flex-column gap-4 h-100">
+              <div
+                class="p-4 flex-fill"
+                style="
+                  background-color: var(--bg-card);
+                  border: 1px solid var(--border);
+                  border-left: 4px solid #ff6b35;
+                "
+              >
+                <p
+                  class="text-secondary mb-4"
+                  style="font-size: 0.95rem; line-height: 1.7"
+                >
+                  &ldquo;Four months in and I've dropped 12 kg while adding
+                  significant strength. The programming is scientific. The
+                  coaches are invested. Best decision I've made for my
+                  body.&rdquo;
+                </p>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <div
+                      class="text-white fw-bold small text-uppercase"
+                      style="letter-spacing: 1px"
+                    >
+                      Amara N.
                     </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="coach-panel position-relative overflow-hidden" style="height: 420px;">
-                        <img src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?q=80&w=800&auto=format&fit=crop"
-                            class="w-100 h-100 position-absolute top-0 start-0"
-                            style="object-fit: cover; filter: grayscale(20%);" alt="Mei Chen">
-                        <div class="position-absolute top-0 start-0 w-100 h-100"
-                            style="background: linear-gradient(to top, rgba(8,12,20,0.95) 0%, rgba(8,12,20,0.2) 50%, transparent 100%);">
-                        </div>
-                        <div class="position-absolute top-0 start-0 p-3">
-                            <span class="fw-bolder"
-                                style="font-size: 0.7rem; letter-spacing: 3px; color: var(--accent); font-family: 'JetBrains Mono', monospace;">02</span>
-                        </div>
-                        <div class="position-absolute bottom-0 start-0 w-100 p-4">
-                            <span class="d-inline-block mb-2 fw-bold text-white px-2 py-1"
-                                style="background-color: #ff6b35; font-size: 0.65rem; letter-spacing: 2px; text-transform: uppercase;">HIIT</span>
-                            <h4 class="text-white fw-bolder text-uppercase mb-1"
-                                style="font-size: 1.1rem; letter-spacing: 1px;">Mei Chen</h4>
-                            <p class="text-secondary small mb-3">Former Olympic sprinter. HIIT &amp; metabolic
-                                conditioning specialist.</p>
-                            <a href="#" class="text-accent text-decoration-none fw-bold mock-link"
-                                style="font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase;">Profile
-                                &rarr;</a>
-                        </div>
+                    <div class="text-secondary" style="font-size: 0.8rem">
+                      Nurse &mdash; Member since Oct 2024
                     </div>
+                  </div>
+                  <div class="text-accent" style="font-size: 0.8rem">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
                 </div>
+              </div>
 
-                <div class="col-md-6 col-lg-3">
-                    <div class="coach-panel position-relative overflow-hidden" style="height: 420px;">
-                        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=800&auto=format&fit=crop"
-                            class="w-100 h-100 position-absolute top-0 start-0"
-                            style="object-fit: cover; filter: grayscale(20%);" alt="Carlos Mendoza">
-                        <div class="position-absolute top-0 start-0 w-100 h-100"
-                            style="background: linear-gradient(to top, rgba(8,12,20,0.95) 0%, rgba(8,12,20,0.2) 50%, transparent 100%);">
-                        </div>
-                        <div class="position-absolute top-0 start-0 p-3">
-                            <span class="fw-bolder"
-                                style="font-size: 0.7rem; letter-spacing: 3px; color: var(--accent); font-family: 'JetBrains Mono', monospace;">03</span>
-                        </div>
-                        <div class="position-absolute bottom-0 start-0 w-100 p-4">
-                            <span class="d-inline-block mb-2 fw-bold text-white px-2 py-1"
-                                style="background-color: #7c5cbf; font-size: 0.65rem; letter-spacing: 2px; text-transform: uppercase;">Mobility</span>
-                            <h4 class="text-white fw-bolder text-uppercase mb-1"
-                                style="font-size: 1.1rem; letter-spacing: 1px;">Carlos Mendoza</h4>
-                            <p class="text-secondary small mb-3">Master mobility specialist. Movement mechanics &amp;
-                                joint health.</p>
-                            <a href="#" class="text-accent text-decoration-none fw-bold mock-link"
-                                style="font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase;">Profile
-                                &rarr;</a>
-                        </div>
+              <div
+                class="p-4 flex-fill"
+                style="
+                  background-color: var(--bg-card);
+                  border: 1px solid var(--border);
+                  border-left: 4px solid #7c5cbf;
+                "
+              >
+                <p
+                  class="text-secondary mb-4"
+                  style="font-size: 0.95rem; line-height: 1.7"
+                >
+                  &ldquo;I train at 6 AM before work. The early classes are just
+                  as well run as the evenings. Consistently excellent &mdash;
+                  staff, programming, and the energy every single
+                  morning.&rdquo;
+                </p>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <div
+                      class="text-white fw-bold small text-uppercase"
+                      style="letter-spacing: 1px"
+                    >
+                      Tom V.
                     </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="coach-panel position-relative overflow-hidden" style="height: 420px;">
-                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=800&auto=format&fit=crop"
-                            class="w-100 h-100 position-absolute top-0 start-0"
-                            style="object-fit: cover; filter: grayscale(20%);" alt="Sarah Jenkins">
-                        <div class="position-absolute top-0 start-0 w-100 h-100"
-                            style="background: linear-gradient(to top, rgba(8,12,20,0.95) 0%, rgba(8,12,20,0.2) 50%, transparent 100%);">
-                        </div>
-                        <div class="position-absolute top-0 start-0 p-3">
-                            <span class="fw-bolder"
-                                style="font-size: 0.7rem; letter-spacing: 3px; color: var(--accent); font-family: 'JetBrains Mono', monospace;">04</span>
-                        </div>
-                        <div class="position-absolute bottom-0 start-0 w-100 p-4">
-                            <span class="d-inline-block mb-2 fw-bold text-white px-2 py-1"
-                                style="background-color: #2ea8a0; font-size: 0.65rem; letter-spacing: 2px; text-transform: uppercase;">Endurance</span>
-                            <h4 class="text-white fw-bolder text-uppercase mb-1"
-                                style="font-size: 1.1rem; letter-spacing: 1px;">Sarah Jenkins</h4>
-                            <p class="text-secondary small mb-3">Ironman champion. USATF certified. Builds world-class
-                                aerobic capacity.</p>
-                            <a href="#" class="text-accent text-decoration-none fw-bold mock-link"
-                                style="font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase;">Profile
-                                &rarr;</a>
-                        </div>
+                    <div class="text-secondary" style="font-size: 0.8rem">
+                      Accountant &mdash; Member since Mar 2023
                     </div>
+                  </div>
+                  <div class="text-accent" style="font-size: 0.8rem">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
                 </div>
-
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-
-    <section class="upload-section" data-aos="fade-up" style="background-color: var(--bg-darker); padding: 6rem 0;">
-        <div class="container">
-            <div class="row g-5 align-items-start">
-                <div class="col-lg-4 d-none d-lg-block">
-                    <div class="position-relative" style="height: 520px;">
-                        <div class="position-absolute"
-                            style="top:0; left:0; width:70%; height:60%; overflow:hidden; border: 2px solid var(--border);">
-                            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=600&auto=format&fit=crop"
-                                style="width:100%;height:100%;object-fit:cover;filter:grayscale(15%);"
-                                alt="Gym progress 1">
-                        </div>
-                        <div class="position-absolute"
-                            style="bottom:0; right:0; width:60%; height:50%; overflow:hidden; border: 2px solid var(--border);">
-                            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=600&auto=format&fit=crop"
-                                style="width:100%;height:100%;object-fit:cover;filter:grayscale(15%);"
-                                alt="Gym progress 2">
-                        </div>
-                        <div class="position-absolute"
-                            style="top:8%; right:0; width:28%; height:32%; overflow:hidden; border: 2px solid var(--border);">
-                            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=300&auto=format&fit=crop"
-                                style="width:100%;height:100%;object-fit:cover;filter:grayscale(15%);"
-                                alt="Gym progress 3">
-                        </div>
-                        <div class="position-absolute"
-                            style="bottom:2%; left:0; width:27%; height:32%; overflow:hidden; border: 2px solid var(--border);">
-                            <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=300&auto=format&fit=crop"
-                                style="width:100%;height:100%;object-fit:cover;filter:grayscale(15%);"
-                                alt="Gym progress 4">
-                        </div>
-                        <div class="position-absolute"
-                            style="top:-12px; left:-12px; width:60px; height:60px; border-top: 3px solid var(--accent); border-left: 3px solid var(--accent);">
-                        </div>
-                        <div class="position-absolute"
-                            style="bottom:-12px; right:-12px; width:60px; height:60px; border-bottom: 3px solid var(--accent); border-right: 3px solid var(--accent);">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-8">
-                    <span class="section-label">Community</span>
-                    <h2 class="display-5 fw-bolder text-white text-uppercase mb-2">Share Your <span
-                            class="text-accent">Progress</span></h2>
-                    <p class="text-secondary mb-5" style="max-width: 520px;">Drop your workout photos below to be
-                        featured on our community wall. Every week the best shot gets pinned to the top.</p>
-                    <div id="drop-zone" class="drop-zone p-5 border-dashed" role="button" aria-label="File upload area"
-                        tabindex="0">
-                        <i class="fa-solid fa-cloud-arrow-up fa-2x text-accent mb-3" aria-hidden="true"></i>
-                        <h5 class="text-white fw-bold text-uppercase mb-1">Drag &amp; Drop Images Here</h5>
-                        <p class="text-secondary small mb-0">or click to browse &mdash; JPG, PNG, WEBP accepted</p>
-                        <input type="file" id="file-input" multiple accept="image/*" class="d-none"
-                            aria-label="Select images to upload">
-                    </div>
-                    <div id="image-preview-container" class="d-flex flex-wrap mt-4 gap-3"></div>
-                    <button id="upload-btn" class="btn btn-accent mt-4 d-none text-uppercase fw-bold px-4 py-2"
-                        aria-label="Upload selected images">Upload Images</button>
-                    <div id="upload-status" class="mt-3" role="status" aria-live="polite"></div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="reviews-section" data-aos="fade-up" style="background-color: var(--bg-darker); padding: 6rem 0;">
-        <div class="container">
-
-            <div class="row align-items-end mb-5">
-                <div class="col-md-7">
-                    <span class="section-label">Member Stories</span>
-                    <h2 class="display-4 fw-bolder text-white text-uppercase lh-1 mb-0">Proven <span
-                            class="text-accent">Results</span></h2>
-                </div>
-                <div class="col-md-5 mt-4 mt-md-0">
-                    <p class="text-secondary mb-0" style="font-size: 0.9rem; line-height: 1.7;">Don't take our word for
-                        it. Over 2,400 members have trained here &mdash; this is what they said.</p>
-                </div>
-            </div>
-
-            <div class="row g-0 mb-5 border border-dark">
-                <div class="col-4 p-4 border-end border-dark text-center">
-                    <div class="text-accent fw-bolder" style="font-size: 2.5rem; line-height: 1;">98%</div>
-                    <p class="text-secondary small text-uppercase fw-bold mt-2 mb-0" style="letter-spacing: 1px;">Would
-                        Recommend</p>
-                </div>
-                <div class="col-4 p-4 border-end border-dark text-center">
-                    <div class="text-white fw-bolder" style="font-size: 2.5rem; line-height: 1;">2,400<span
-                            class="text-accent">+</span></div>
-                    <p class="text-secondary small text-uppercase fw-bold mt-2 mb-0" style="letter-spacing: 1px;">Active
-                        Members</p>
-                </div>
-                <div class="col-4 p-4 text-center">
-                    <div class="text-white fw-bolder" style="font-size: 2.5rem; line-height: 1;">4.9<span
-                            class="text-accent">★</span></div>
-                    <p class="text-secondary small text-uppercase fw-bold mt-2 mb-0" style="letter-spacing: 1px;">
-                        Average Rating</p>
-                </div>
-            </div>
-
-            <div class="row g-4">
-
-                <div class="col-lg-6">
-                    <div class="p-5 h-100"
-                        style="background-color: var(--bg-card); border: 1px solid var(--border); border-left: 4px solid var(--accent);">
-                        <div class="text-accent mb-4"
-                            style="font-size: 0.75rem; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;">
-                            Featured Review</div>
-                        <p class="text-white mb-5" style="font-size: 1.3rem; line-height: 1.6; font-weight: 300;">
-                            &ldquo;I came in sceptical. I'm leaving every session with more than I expected. ClickFit
-                            isn't about hype &mdash; it's about systems, accountability, and relentless improvement.
-                            This place genuinely changed how I approach my health.&rdquo;</p>
-                        <div class="d-flex align-items-center gap-3">
-                            <div
-                                style="width: 48px; height: 48px; background-color: var(--accent); display: flex; align-items: center; justify-content: center; font-weight: 900; color: #000; font-size: 1.1rem;">
-                                JL</div>
-                            <div>
-                                <div class="text-white fw-bold text-uppercase" style="letter-spacing: 1px;">Jordan L.
-                                </div>
-                                <div class="text-secondary small">Product Manager &mdash; Member since Jan 2024</div>
-                            </div>
-                            <div class="ms-auto text-accent" style="font-size: 0.85rem;">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="d-flex flex-column gap-4 h-100">
-
-                        <div class="p-4 flex-fill"
-                            style="background-color: var(--bg-card); border: 1px solid var(--border); border-left: 4px solid #ff6b35;">
-                            <p class="text-secondary mb-4" style="font-size: 0.95rem; line-height: 1.7;">&ldquo;Four
-                                months in and I've dropped 12 kg while adding significant strength. The programming is
-                                scientific. The coaches are invested. Best decision I've made for my body.&rdquo;</p>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div>
-                                    <div class="text-white fw-bold small text-uppercase" style="letter-spacing: 1px;">
-                                        Amara N.</div>
-                                    <div class="text-secondary" style="font-size: 0.8rem;">Nurse &mdash; Member since
-                                        Oct 2024</div>
-                                </div>
-                                <div class="text-accent" style="font-size: 0.8rem;">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-4 flex-fill"
-                            style="background-color: var(--bg-card); border: 1px solid var(--border); border-left: 4px solid #7c5cbf;">
-                            <p class="text-secondary mb-4" style="font-size: 0.95rem; line-height: 1.7;">&ldquo;I train
-                                at 6 AM before work. The early classes are just as well run as the evenings.
-                                Consistently excellent &mdash; staff, programming, and the energy every single
-                                morning.&rdquo;</p>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div>
-                                    <div class="text-white fw-bold small text-uppercase" style="letter-spacing: 1px;">
-                                        Tom V.</div>
-                                    <div class="text-secondary" style="font-size: 0.8rem;">Accountant &mdash; Member
-                                        since Mar 2023</div>
-                                </div>
-                                <div class="text-accent" style="font-size: 0.8rem;">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star-half-stroke"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
+      </div>
     </section>
 
     <section class="blog-section py-5" data-aos="fade-up">
-        <div class="container py-4">
-            <div class="d-flex justify-content-between align-items-end border-bottom border-dark pb-4 mb-5">
-                <div>
-                    <span class="section-label">Our Blog</span>
-                    <h2 class="display-5 fw-bolder text-white text-uppercase mb-0">Latest <span
-                            class="text-accent">News</span> &amp; Updates</h2>
-                </div>
-                <a href="#"
-                    class="text-secondary text-decoration-none fw-bold small text-uppercase mock-link hover-accent d-none d-md-block"
-                    style="letter-spacing: 1px;">All Articles &rarr;</a>
-            </div>
-
-            <div class="row g-4 mb-5">
-                <div class="col-md-6 col-lg-3">
-                    <div class="blog-card-wrapper mock-link">
-                        <div style="overflow:hidden;">
-                            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=600&auto=format&fit=crop"
-                                class="blog-img" alt="Kettlebells">
-                        </div>
-                        <div class="p-3" style="background-color: var(--bg-card);">
-                            <p class="text-accent fw-bold small text-uppercase mb-2" style="letter-spacing: 1px;">
-                                Training</p>
-                            <h5 class="text-white fw-bold mb-3" style="font-size: 0.95rem;">Top 5 workout locations to
-                                vary your daily routine</h5>
-                            <p class="text-secondary small mb-0">Apr 21, 2026 &nbsp;&bull;&nbsp; 0 Comments</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="blog-card-wrapper mock-link">
-                        <div style="overflow:hidden;">
-                            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=600&auto=format&fit=crop"
-                                class="blog-img" alt="Tire flip">
-                        </div>
-                        <div class="p-3" style="background-color: var(--bg-card);">
-                            <p class="text-accent fw-bold small text-uppercase mb-2" style="letter-spacing: 1px;">
-                                Training</p>
-                            <h5 class="text-white fw-bold mb-3" style="font-size: 0.95rem;">Workout videos to avoid and
-                                videos to watch</h5>
-                            <p class="text-secondary small mb-0">Apr 21, 2026 &nbsp;&bull;&nbsp; 0 Comments</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="blog-card-wrapper mock-link">
-                        <div style="overflow:hidden;">
-                            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=600&auto=format&fit=crop"
-                                class="blog-img" alt="Stretching">
-                        </div>
-                        <div class="p-3" style="background-color: var(--bg-card);">
-                            <p class="text-accent fw-bold small text-uppercase mb-2" style="letter-spacing: 1px;">
-                                Recovery</p>
-                            <h5 class="text-white fw-bold mb-3" style="font-size: 0.95rem;">That's why stretching is
-                                worth trying</h5>
-                            <p class="text-secondary small mb-0">Apr 21, 2026 &nbsp;&bull;&nbsp; 0 Comments</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="blog-card-wrapper mock-link">
-                        <div style="overflow:hidden;">
-                            <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=600&auto=format&fit=crop"
-                                class="blog-img" alt="Squat">
-                        </div>
-                        <div class="p-3" style="background-color: var(--bg-card);">
-                            <p class="text-accent fw-bold small text-uppercase mb-2" style="letter-spacing: 1px;">
-                                Strength</p>
-                            <h5 class="text-white fw-bold mb-3" style="font-size: 0.95rem;">10 strength exercises to
-                                improve your running</h5>
-                            <p class="text-secondary small mb-0">Apr 21, 2026 &nbsp;&bull;&nbsp; 1 Comment</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="d-flex gap-1 mt-2">
-                <div style="width: 36px; height: 3px; background-color: var(--accent);"></div>
-                <div style="width: 20px; height: 3px; background-color: #444; cursor: pointer;"></div>
-                <div style="width: 20px; height: 3px; background-color: #444; cursor: pointer;"></div>
-                <div style="width: 20px; height: 3px; background-color: #444; cursor: pointer;"></div>
-            </div>
+      <div class="container py-4">
+        <div
+          class="d-flex justify-content-between align-items-end border-bottom border-dark pb-4 mb-5"
+        >
+          <div>
+            <span class="section-label">Our Blog</span>
+            <h2 class="display-5 fw-bolder text-white text-uppercase mb-0">
+              Latest <span class="text-accent">News</span> &amp; Updates
+            </h2>
+          </div>
+          <a
+            href="#"
+            class="text-secondary text-decoration-none fw-bold small text-uppercase mock-link hover-accent d-none d-md-block"
+            style="letter-spacing: 1px"
+            >All Articles &rarr;</a
+          >
         </div>
+
+        <div class="row g-4 mb-5">
+          <div class="col-md-6 col-lg-3">
+            <div class="blog-card-wrapper mock-link">
+              <div style="overflow: hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=600&auto=format&fit=crop"
+                  class="blog-img"
+                  alt="Kettlebells"
+                />
+              </div>
+              <div class="p-3" style="background-color: var(--bg-card)">
+                <p
+                  class="text-accent fw-bold small text-uppercase mb-2"
+                  style="letter-spacing: 1px"
+                >
+                  Training
+                </p>
+                <h5 class="text-white fw-bold mb-3" style="font-size: 0.95rem">
+                  Top 5 workout locations to vary your daily routine
+                </h5>
+                <p class="text-secondary small mb-0">
+                  Apr 21, 2026 &nbsp;&bull;&nbsp; 0 Comments
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="blog-card-wrapper mock-link">
+              <div style="overflow: hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=600&auto=format&fit=crop"
+                  class="blog-img"
+                  alt="Tire flip"
+                />
+              </div>
+              <div class="p-3" style="background-color: var(--bg-card)">
+                <p
+                  class="text-accent fw-bold small text-uppercase mb-2"
+                  style="letter-spacing: 1px"
+                >
+                  Training
+                </p>
+                <h5 class="text-white fw-bold mb-3" style="font-size: 0.95rem">
+                  Workout videos to avoid and videos to watch
+                </h5>
+                <p class="text-secondary small mb-0">
+                  Apr 21, 2026 &nbsp;&bull;&nbsp; 0 Comments
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="blog-card-wrapper mock-link">
+              <div style="overflow: hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=600&auto=format&fit=crop"
+                  class="blog-img"
+                  alt="Stretching"
+                />
+              </div>
+              <div class="p-3" style="background-color: var(--bg-card)">
+                <p
+                  class="text-accent fw-bold small text-uppercase mb-2"
+                  style="letter-spacing: 1px"
+                >
+                  Recovery
+                </p>
+                <h5 class="text-white fw-bold mb-3" style="font-size: 0.95rem">
+                  That's why stretching is worth trying
+                </h5>
+                <p class="text-secondary small mb-0">
+                  Apr 21, 2026 &nbsp;&bull;&nbsp; 0 Comments
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="blog-card-wrapper mock-link">
+              <div style="overflow: hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=600&auto=format&fit=crop"
+                  class="blog-img"
+                  alt="Squat"
+                />
+              </div>
+              <div class="p-3" style="background-color: var(--bg-card)">
+                <p
+                  class="text-accent fw-bold small text-uppercase mb-2"
+                  style="letter-spacing: 1px"
+                >
+                  Strength
+                </p>
+                <h5 class="text-white fw-bold mb-3" style="font-size: 0.95rem">
+                  10 strength exercises to improve your running
+                </h5>
+                <p class="text-secondary small mb-0">
+                  Apr 21, 2026 &nbsp;&bull;&nbsp; 1 Comment
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex gap-1 mt-2">
+          <div
+            style="width: 36px; height: 3px; background-color: var(--accent)"
+          ></div>
+          <div
+            style="
+              width: 20px;
+              height: 3px;
+              background-color: #444;
+              cursor: pointer;
+            "
+          ></div>
+          <div
+            style="
+              width: 20px;
+              height: 3px;
+              background-color: #444;
+              cursor: pointer;
+            "
+          ></div>
+          <div
+            style="
+              width: 20px;
+              height: 3px;
+              background-color: #444;
+              cursor: pointer;
+            "
+          ></div>
+        </div>
+      </div>
     </section>
 
     <section class="cta-section">
-        <div class="cta-bg-left"></div>
-        <div class="cta-bg-right"></div>
+      <div class="cta-bg-left"></div>
+      <div class="cta-bg-right"></div>
 
-        <div class="container cta-content">
-            <div class="row align-items-center">
-                <div class="col-lg-5 d-none d-lg-block text-start" data-aos="fade-right" data-aos-delay="200">
-                    <div class="cta-join-text outline-text">BE<br>UNSTOPPABLE</div>
-                </div>
-                <div class="col-lg-6 offset-lg-1 py-5 ps-lg-5" data-aos="fade-left">
-                    <h2 class="cta-title mb-3">CLAIM YOUR<br>SPOT</h2>
-                    <p class="cta-sub mb-4 text-dark">START YOUR FREE WEEK. CANCEL ANY TIME.</p>
+      <div class="container cta-content">
+        <div class="row align-items-center">
+          <div
+            class="col-lg-5 d-none d-lg-block text-start"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            <div class="cta-join-text outline-text">BE<br />UNSTOPPABLE</div>
+          </div>
+          <div class="col-lg-6 offset-lg-1 py-5 ps-lg-5" data-aos="fade-left">
+            <h2 class="cta-title mb-3">CLAIM YOUR<br />SPOT</h2>
+            <p class="cta-sub mb-4 text-dark">
+              START YOUR FREE WEEK. CANCEL ANY TIME.
+            </p>
 
-                    <form class="cta-form" id="cta-form" action="https://formspree.io/f/xvgopqje" method="POST"
-                        aria-label="Claim Spot Form">
-                        <input type="text" id="cta-name" name="name" class="cta-input font-mono" placeholder="Your name"
-                            required minlength="2" autocomplete="name" aria-label="Your name">
-                        <input type="email" id="cta-email" name="email" class="cta-input font-mono"
-                            placeholder="Your email address" required autocomplete="email"
-                            aria-label="Your email address">
-                        <button type="submit" class="cta-btn mt-2 font-mono text-uppercase"
-                            aria-label="Claim your free week">Claim Access</button>
-                    </form>
-                </div>
-            </div>
+            <form
+              class="cta-form"
+              id="cta-form"
+              action="https://formspree.io/f/xvgopqje"
+              method="POST"
+              aria-label="Claim Spot Form"
+            >
+              <input
+                type="text"
+                id="cta-name"
+                name="name"
+                class="cta-input font-mono"
+                placeholder="Your name"
+                required
+                minlength="2"
+                autocomplete="name"
+                aria-label="Your name"
+              />
+              <input
+                type="email"
+                id="cta-email"
+                name="email"
+                class="cta-input font-mono"
+                placeholder="Your email address"
+                required
+                autocomplete="email"
+                aria-label="Your email address"
+              />
+              <button
+                type="submit"
+                class="cta-btn mt-2 font-mono text-uppercase"
+                aria-label="Claim your free week"
+              >
+                Claim Access
+              </button>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
-    <footer style="background-color: var(--bg-darker); border-top: 1px solid var(--border);">
-        <div style="background-color: var(--accent); padding: 0.9rem 0;">
-            <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
-                <p class="mb-0 fw-bold text-dark text-uppercase" style="font-size: 0.78rem; letter-spacing: 2px;">Ready
-                    to start your transformation?</p>
-                <a href="#" class="fw-bold text-dark text-decoration-none text-uppercase mock-link"
-                    style="font-size: 0.78rem; letter-spacing: 2px;">Claim Your Free Week &rarr;</a>
-            </div>
+    <footer
+      style="
+        background-color: var(--bg-darker);
+        border-top: 1px solid var(--border);
+      "
+    >
+      <div style="background-color: var(--accent); padding: 0.9rem 0">
+        <div
+          class="container d-flex justify-content-between align-items-center flex-wrap gap-2"
+        >
+          <p
+            class="mb-0 fw-bold text-dark text-uppercase"
+            style="font-size: 0.78rem; letter-spacing: 2px"
+          >
+            Ready to start your transformation?
+          </p>
+          <a
+            href="#"
+            class="fw-bold text-dark text-decoration-none text-uppercase mock-link"
+            style="font-size: 0.78rem; letter-spacing: 2px"
+            >Claim Your Free Week &rarr;</a
+          >
         </div>
+      </div>
 
-        <div class="container" style="padding: 5rem 0 3rem;">
-            <div class="row g-5">
-
-                <div class="col-lg-4">
-                    <a class="d-block mb-4 text-decoration-none" href="#" aria-label="ClickFit Home">
-                        <span class="fw-bolder text-white" style="font-size: 2rem; letter-spacing: 2px;">CLICK<span
-                                style="color: var(--accent);">FIT</span></span>
-                    </a>
-                    <p class="text-secondary mb-4" style="font-size: 0.9rem; line-height: 1.8; max-width: 320px;">A
-                        premium fitness facility built for people who take their training seriously. Expert coaches,
-                        evidence-based programming, and a community that pushes you further.</p>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="footer-icon mock-link" aria-label="Facebook"><i
-                                class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="footer-icon mock-link" aria-label="Instagram"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="footer-icon mock-link" aria-label="Twitter/X"><i
-                                class="fa-brands fa-twitter"></i></a>
-                        <a href="#" class="footer-icon mock-link" aria-label="YouTube"><i
-                                class="fa-brands fa-youtube"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-2">
-                    <h6 class="text-white fw-bold text-uppercase mb-4" style="letter-spacing: 2px; font-size: 0.75rem;">
-                        Explore</h6>
-                    <ul class="list-unstyled">
-                        <li class="mb-3"><a href="#"
-                                class="text-secondary text-decoration-none footer-link mock-link">Home</a></li>
-                        <li class="mb-3"><a href="#"
-                                class="text-secondary text-decoration-none footer-link mock-link">Programs</a></li>
-                        <li class="mb-3"><a href="#"
-                                class="text-secondary text-decoration-none footer-link mock-link">Schedule</a></li>
-                        <li class="mb-3"><a href="#"
-                                class="text-secondary text-decoration-none footer-link mock-link">Trainers</a></li>
-                        <li class="mb-3"><a href="#"
-                                class="text-secondary text-decoration-none footer-link mock-link">Blog</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-6 col-lg-2">
-                    <h6 class="text-white fw-bold text-uppercase mb-4" style="letter-spacing: 2px; font-size: 0.75rem;">
-                        Classes</h6>
-                    <ul class="list-unstyled">
-                        <li class="mb-3"><a href="#"
-                                class="text-secondary text-decoration-none footer-link mock-link">Strength</a></li>
-                        <li class="mb-3"><a href="#"
-                                class="text-secondary text-decoration-none footer-link mock-link">HIIT</a></li>
-                        <li class="mb-3"><a href="#"
-                                class="text-secondary text-decoration-none footer-link mock-link">Mobility</a></li>
-                        <li class="mb-3"><a href="#"
-                                class="text-secondary text-decoration-none footer-link mock-link">Endurance</a></li>
-                        <li class="mb-3"><a href="#"
-                                class="text-secondary text-decoration-none footer-link mock-link">CrossFit</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-4">
-                    <h6 class="text-white fw-bold text-uppercase mb-4" style="letter-spacing: 2px; font-size: 0.75rem;">
-                        Stay in the loop</h6>
-                    <p class="text-secondary small mb-4">Get weekly class updates, nutrition tips, and member spotlights
-                        direct to your inbox.</p>
-                    <form class="newsletter-form mb-3 position-relative" id="newsletter-form"
-                        action="https://formspree.io/f/xvgopqje" method="POST" aria-label="Newsletter Form">
-                        <input type="email" id="newsletter-email" name="email"
-                            class="form-control bg-transparent border-0 border-bottom border-secondary text-white shadow-none ps-0 pe-5 py-3"
-                            style="font-size: 0.9rem;" placeholder="your@email.com" required autocomplete="email"
-                            aria-label="Enter your email address to subscribe">
-                        <button type="submit"
-                            class="btn position-absolute top-50 end-0 translate-middle-y text-accent p-0"
-                            aria-label="Subscribe to newsletter">
-                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                        </button>
-                    </form>
-                    <div class="form-check mt-3">
-                        <input class="form-check-input bg-transparent border-secondary" type="checkbox"
-                            id="privacyCheck">
-                        <label class="form-check-label text-secondary" style="font-size: 0.8rem;" for="privacyCheck">
-                            I agree to the <a href="#"
-                                class="text-secondary text-decoration-underline mock-link">Privacy Policy</a>.
-                        </label>
-                    </div>
-
-                    <div class="mt-4 pt-4 border-top border-dark">
-                        <p class="text-secondary small mb-2"><i
-                                class="fa-solid fa-location-dot me-2 text-accent"></i>123 Fitness Ave, New York NY 10001
-                        </p>
-                        <p class="text-secondary small mb-2"><i class="fa-solid fa-phone me-2 text-accent"></i>+1 (555)
-                            123-4567</p>
-                        <p class="text-secondary small mb-0"><i
-                                class="fa-solid fa-envelope me-2 text-accent"></i>info@clickfit.com</p>
-                    </div>
-                </div>
-
+      <div class="container" style="padding: 5rem 0 3rem">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <a
+              class="d-block mb-4 text-decoration-none"
+              href="#"
+              aria-label="ClickFit Home"
+            >
+              <span
+                class="fw-bolder text-white"
+                style="font-size: 2rem; letter-spacing: 2px"
+                >CLICK<span style="color: var(--accent)">FIT</span></span
+              >
+            </a>
+            <p
+              class="text-secondary mb-4"
+              style="font-size: 0.9rem; line-height: 1.8; max-width: 320px"
+            >
+              A premium fitness facility built for people who take their
+              training seriously. Expert coaches, evidence-based programming,
+              and a community that pushes you further.
+            </p>
+            <div class="d-flex gap-3">
+              <a href="#" class="footer-icon mock-link" aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" class="footer-icon mock-link" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="footer-icon mock-link" aria-label="Twitter/X"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" class="footer-icon mock-link" aria-label="YouTube"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
             </div>
-        </div>
+          </div>
 
-        <div style="border-top: 1px solid var(--border); padding: 1.25rem 0;">
-            <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
-                <p class="text-secondary small mb-0">ClickFit &copy; 2026. All rights reserved. Built with passion.</p>
-                <a href="#" class="text-secondary text-decoration-none hover-accent" aria-label="Back to top"
-                    style="font-size: 0.78rem; letter-spacing: 1px; text-transform: uppercase;">
-                    Back to top <i class="fa-solid fa-arrow-up ms-1"></i>
-                </a>
+          <div class="col-6 col-lg-2">
+            <h6
+              class="text-white fw-bold text-uppercase mb-4"
+              style="letter-spacing: 2px; font-size: 0.75rem"
+            >
+              Explore
+            </h6>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none footer-link mock-link"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none footer-link mock-link"
+                  >Programs</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none footer-link mock-link"
+                  >Schedule</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none footer-link mock-link"
+                  >Trainers</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none footer-link mock-link"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h6
+              class="text-white fw-bold text-uppercase mb-4"
+              style="letter-spacing: 2px; font-size: 0.75rem"
+            >
+              Classes
+            </h6>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none footer-link mock-link"
+                  >Strength</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none footer-link mock-link"
+                  >HIIT</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none footer-link mock-link"
+                  >Mobility</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none footer-link mock-link"
+                  >Endurance</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none footer-link mock-link"
+                  >CrossFit</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h6
+              class="text-white fw-bold text-uppercase mb-4"
+              style="letter-spacing: 2px; font-size: 0.75rem"
+            >
+              Stay in the loop
+            </h6>
+            <p class="text-secondary small mb-4">
+              Get weekly class updates, nutrition tips, and member spotlights
+              direct to your inbox.
+            </p>
+            <form
+              class="newsletter-form mb-3 position-relative"
+              id="newsletter-form"
+              action="https://formspree.io/f/xvgopqje"
+              method="POST"
+              aria-label="Newsletter Form"
+            >
+              <input
+                type="email"
+                id="newsletter-email"
+                name="email"
+                class="form-control bg-transparent border-0 border-bottom border-secondary text-white shadow-none ps-0 pe-5 py-3"
+                style="font-size: 0.9rem"
+                placeholder="your@email.com"
+                required
+                autocomplete="email"
+                aria-label="Enter your email address to subscribe"
+              />
+              <button
+                type="submit"
+                class="btn position-absolute top-50 end-0 translate-middle-y text-accent p-0"
+                aria-label="Subscribe to newsletter"
+              >
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </form>
+            <div class="form-check mt-3">
+              <input
+                class="form-check-input bg-transparent border-secondary"
+                type="checkbox"
+                id="privacyCheck"
+              />
+              <label
+                class="form-check-label text-secondary"
+                style="font-size: 0.8rem"
+                for="privacyCheck"
+              >
+                I agree to the
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-underline mock-link"
+                  >Privacy Policy</a
+                >.
+              </label>
             </div>
-        </div>
 
+            <div class="mt-4 pt-4 border-top border-dark">
+              <p class="text-secondary small mb-2">
+                <i class="fa-solid fa-location-dot me-2 text-accent"></i>123
+                Fitness Ave, New York NY 10001
+              </p>
+              <p class="text-secondary small mb-2">
+                <i class="fa-solid fa-phone me-2 text-accent"></i>+1 (555)
+                123-4567
+              </p>
+              <p class="text-secondary small mb-0">
+                <i class="fa-solid fa-envelope me-2 text-accent"></i
+                >info@clickfit.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="border-top: 1px solid var(--border); padding: 1.25rem 0">
+        <div
+          class="container d-flex justify-content-between align-items-center flex-wrap gap-2"
+        >
+          <p class="text-secondary small mb-0">
+            ClickFit &copy; 2026. All rights reserved. Built with passion.
+          </p>
+          <a
+            href="#"
+            class="text-secondary text-decoration-none hover-accent"
+            aria-label="Back to top"
+            style="
+              font-size: 0.78rem;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+            "
+          >
+            Back to top <i class="fa-solid fa-arrow-up ms-1"></i>
+          </a>
+        </div>
+      </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
@@ -713,38 +1505,53 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
     <script>
-        window.addEventListener('load', function () {
-            var preloader = document.getElementById('preloader');
-            if (preloader) {
-                setTimeout(function () {
-                    preloader.style.pointerEvents = 'none';
-                    preloader.style.opacity = '0';
-                    preloader.style.transition = 'opacity 0.5s ease';
-                    setTimeout(function () { preloader.style.display = 'none'; }, 500);
-                }, 400);
-            }
-        });
+      window.addEventListener("load", function () {
+        var preloader = document.getElementById("preloader");
+        if (preloader) {
+          setTimeout(function () {
+            preloader.style.pointerEvents = "none";
+            preloader.style.opacity = "0";
+            preloader.style.transition = "opacity 0.5s ease";
+            setTimeout(function () {
+              preloader.style.display = "none";
+            }, 500);
+          }, 400);
+        }
+      });
 
-        setTimeout(function () {
-            var preloader = document.getElementById('preloader');
-            if (preloader && preloader.style.display !== 'none') {
-                preloader.style.pointerEvents = 'none';
-                preloader.style.display = 'none';
-            }
-        }, 3000);
+      setTimeout(function () {
+        var preloader = document.getElementById("preloader");
+        if (preloader && preloader.style.display !== "none") {
+          preloader.style.pointerEvents = "none";
+          preloader.style.display = "none";
+        }
+      }, 3000);
     </script>
 
-    <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1100">
-        <div id="successToast" class="toast align-items-center text-white border-0"
-            style="background-color: var(--accent);" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="d-flex">
-                <div class="toast-body fw-bold text-dark">
-                    Success! Your submission has been received.
-                </div>
-                <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
+    <div
+      class="toast-container position-fixed bottom-0 end-0 p-3"
+      style="z-index: 1100"
+    >
+      <div
+        id="successToast"
+        class="toast align-items-center text-white border-0"
+        style="background-color: var(--accent)"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body fw-bold text-dark">
+            Success! Your submission has been received.
+          </div>
+          <button
+            type="button"
+            class="btn-close me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
         </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

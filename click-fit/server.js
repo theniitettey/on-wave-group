@@ -10,6 +10,23 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.static(path.join(__dirname, "public")));
 
+app.get("/api/objects", async (req, res, next) => {
+  try {
+    const response = await fetch("https://api.restful-api.dev/objects");
+
+    if (!response.ok) {
+      return res.status(response.status).json({
+        error: "Failed to load catalog data from upstream API.",
+      });
+    }
+
+    const data = await response.json();
+    res.json(data);
+  } catch (error) {
+    next(error);
+  }
+});
+
 const uploadDir = path.join(__dirname, "upload_images");
 if (!fs.existsSync(uploadDir)) {
   fs.mkdirSync(uploadDir);

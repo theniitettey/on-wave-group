@@ -18,33 +18,28 @@ $(document).ready(function () {
     this.reset();
   });
 
-  $.ajax({
-    url: "https://api.restful-api.dev/objects",
-    method: "GET",
-    dataType: "json",
-    success: function (data) {
-      const $grid = $("#api-grid");
+  function renderCatalog(items) {
+    const $grid = $("#api-grid");
+    $grid.empty();
 
-      const items = data.slice(0, 8);
+    items.slice(0, 8).forEach((item, index) => {
+      const delay = (index % 4) * 100;
 
-      items.forEach((item, index) => {
-        const delay = (index % 4) * 100;
-
-        let dataRows = "";
-        if (item.data) {
-          for (const [key, value] of Object.entries(item.data)) {
-            dataRows += `
+      let dataRows = "";
+      if (item.data) {
+        for (const [key, value] of Object.entries(item.data)) {
+          dataRows += `
                             <div class="data-row">
                                 <span class="data-key">${key}</span>
                                 <span class="data-value" title="${value}">${value}</span>
                             </div>
                         `;
-          }
-        } else {
-          dataRows = `<div class="data-row text-center text-secondary">No extra data</div>`;
         }
+      } else {
+        dataRows = `<div class="data-row text-center text-secondary">No extra data</div>`;
+      }
 
-        const cardHtml = `
+      const cardHtml = `
                     <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="${delay}">
                         <div class="api-card">
                             <div class="api-id">ID #${item.id}</div>
@@ -55,13 +50,21 @@ $(document).ready(function () {
                         </div>
                     </div>
                 `;
-        $grid.append(cardHtml);
-      });
+      $grid.append(cardHtml);
+    });
+  }
+
+  $.ajax({
+    url: "/api/objects",
+    method: "GET",
+    dataType: "json",
+    success: function (data) {
+      renderCatalog(data);
     },
     error: function (err) {
       console.error("Error fetching API data:", err);
       $("#api-grid").html(
-        '<div class="col-12"><p class="text-danger">Failed to load catalog data.</p></div>',
+        '<div class="col-12"><p class="text-danger mb-0">Failed to load catalog data.</p></div>',
       );
     },
   });
