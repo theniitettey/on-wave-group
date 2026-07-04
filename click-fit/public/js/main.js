@@ -55,7 +55,7 @@ $(document).ready(function () {
   }
 
   $.ajax({
-    url: "/api/objects",
+    url: "https://api.restful-api.dev/objects",
     method: "GET",
     dataType: "json",
     success: function (data) {
