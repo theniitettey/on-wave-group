@@ -20,9 +20,12 @@ $(document).ready(function () {
 
   function renderCatalog(items) {
     const $grid = $("#api-grid");
+    const $gearCount = $(".gear-count");
+    const visibleCount = Math.min(items.length, 8);
     $grid.empty();
+    $gearCount.text(visibleCount);
 
-    items.slice(0, 8).forEach((item, index) => {
+    items.slice(0, visibleCount).forEach((item, index) => {
       const delay = (index % 4) * 100;
 
       let dataRows = "";
@@ -416,48 +419,43 @@ $(document).ready(function () {
     var classes = scheduleData[day];
     if (!classes) return;
     var html = "";
-    classes.forEach(function (c) {
+    classes.forEach(function (c, i) {
       html += `
-                <div class="col-md-6 col-lg-3">
-                    <div class="p-4 h-100" style="background-color: var(--bg-card); border: 1px solid var(--border); border-top: 3px solid ${c.color};">
-                        <div class="d-flex justify-content-between align-items-start mb-3">
-                            <span class="text-accent fw-bold font-mono" style="font-size: 0.8rem; letter-spacing: 1px;">${c.time}</span>
-                            <span class="fw-bold px-2 py-1 small" style="background-color: ${c.color}; color: ${c.textColor}; font-size: 0.65rem; letter-spacing: 1px;">${c.label}</span>
-                        </div>
-                        <h4 class="text-white fw-bolder text-uppercase mb-1" style="font-size: 1.1rem; letter-spacing: 1px;">${c.name}</h4>
-                        <p class="text-secondary small mb-4">${c.desc}</p>
-                        <div class="d-flex align-items-center gap-3 border-top border-dark pt-3">
-                            <span class="text-secondary small font-mono">${c.duration}</span>
-                            <span class="text-secondary" style="font-size: 0.7rem;">|</span>
-                            <span class="text-white small fw-bold">${c.coach}</span>
-                        </div>
-                    </div>
-                </div>`;
+        <div class="schedule-row" style="border-left: 3px solid ${c.color}; animation-delay: ${i * 80}ms">
+          <div class="schedule-row-inner">
+            <div class="sch-time">${c.time}</div>
+            <div class="sch-body">
+              <span class="sch-tag" style="background:${c.color}; color:${c.textColor}">${c.label}</span>
+              <span class="sch-name">${c.name}</span>
+            </div>
+            <div class="sch-meta">
+              <span class="sch-duration">${c.duration}</span>
+              <span class="sch-sep">|</span>
+              <span class="sch-coach">${c.coach}</span>
+            </div>
+            <div class="sch-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="sch-desc">${c.desc}</div>
+        </div>`;
     });
     var $grid = $("#schedule-grid");
     $grid.css("opacity", 0);
     $grid.html(html);
-    $grid.animate({ opacity: 1 }, 300);
+    $grid.animate({ opacity: 1 }, 280);
   }
 
-  $("#schedule [data-day]").on("click", function () {
+  $(document).on("click", ".schedule-row", function () {
+    $(this).toggleClass("sch-open");
+  });
+
+  $(".sch-day-btn").on("click", function () {
     var day = $(this).data("day");
-    $("#schedule [data-day]").each(function () {
-      $(this).css({
-        "background-color": "",
-        color: "#7a8899",
-        "border-color": "#1e2535",
-      });
-    });
-    $(this).css({
-      "background-color": "var(--accent)",
-      color: "#000",
-      "border-color": "var(--accent)",
-    });
+    $(".sch-day-btn").removeClass("sch-day-active");
+    $(this).addClass("sch-day-active");
     renderSchedule(day);
   });
 
-  $("#schedule [data-day]").on("keydown", function (e) {
+  $(".sch-day-btn").on("keydown", function (e) {
     if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
       $(this).trigger("click");
@@ -466,3 +464,180 @@ $(document).ready(function () {
 
   renderSchedule("Wednesday");
 });
+
+(function () {
+  if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined")
+    return;
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils
+    .toArray(".about-count, .reviews-count-value")
+    .forEach(function (el) {
+      var target = Number(el.getAttribute("data-count"));
+      if (Number.isNaN(target)) return;
+      var decimals = parseInt(el.getAttribute("data-decimals") || "0", 10);
+      var prefix = el.getAttribute("data-prefix") || "";
+      var suffix = el.getAttribute("data-suffix") || "";
+      var obj = { val: 0 };
+
+      function formatValue(value) {
+        return (
+          prefix +
+          Number(value).toLocaleString(undefined, {
+            minimumFractionDigits: decimals,
+            maximumFractionDigits: decimals,
+          }) +
+          suffix
+        );
+      }
+
+      gsap.to(obj, {
+        val: target,
+        duration: 2,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: el,
+          start: "top 85%",
+          once: true,
+        },
+        onUpdate: function () {
+          el.textContent = formatValue(obj.val);
+        },
+        onComplete: function () {
+          el.textContent = formatValue(target);
+        },
+      });
+    });
+
+  var heroAccent = document.querySelector(".hero-title .text-accent");
+  if (heroAccent) {
+    var originalText = heroAccent.textContent;
+    var glitchChars = "X#@!%&?";
+    var glitchCount = 0;
+    var maxGlitch = 6;
+    function runGlitch() {
+      if (glitchCount >= maxGlitch) {
+        heroAccent.textContent = originalText;
+        return;
+      }
+      heroAccent.textContent = originalText
+        .split("")
+        .map(function (c) {
+          return Math.random() > 0.5
+            ? glitchChars[Math.floor(Math.random() * glitchChars.length)]
+            : c;
+        })
+        .join("");
+      glitchCount++;
+      setTimeout(runGlitch, 60);
+    }
+    setTimeout(runGlitch, 800);
+  }
+
+  var navbar = document.querySelector(".navbar");
+  if (navbar) {
+    window.addEventListener(
+      "scroll",
+      function () {
+        if (window.scrollY > 60) {
+          navbar.style.backdropFilter = "blur(20px) saturate(180%)";
+          navbar.style.webkitBackdropFilter = "blur(20px) saturate(180%)";
+          navbar.style.backgroundColor = "rgba(8,12,20,0.92)";
+        } else {
+          navbar.style.backdropFilter = "blur(10px)";
+          navbar.style.webkitBackdropFilter = "blur(10px)";
+          navbar.style.backgroundColor = "";
+        }
+      },
+      { passive: true },
+    );
+  }
+
+  var collage = document.querySelector(".upload-section .position-relative");
+  if (collage) {
+    var images = collage.querySelectorAll(
+      "div[style*='position:absolute'], div[class*='position-absolute']",
+    );
+    var depths = [0.04, 0.02, 0.06, 0.03];
+    document.addEventListener("mousemove", function (e) {
+      var cx = window.innerWidth / 2;
+      var cy = window.innerHeight / 2;
+      var dx = (e.clientX - cx) / cx;
+      var dy = (e.clientY - cy) / cy;
+      images.forEach(function (img, i) {
+        var d = depths[i] || 0.03;
+        gsap.to(img, {
+          x: dx * d * 30,
+          y: dy * d * 20,
+          duration: 0.8,
+          ease: "power2.out",
+        });
+      });
+    });
+  }
+
+  var pricingToggle = document.getElementById("pricingToggle");
+  if (pricingToggle) {
+    pricingToggle.addEventListener("change", function () {
+      var isAnnual = this.checked;
+      var labelMonthly = document.getElementById("label-monthly");
+      var labelAnnual = document.getElementById("label-annual");
+      if (labelMonthly)
+        labelMonthly.style.color = isAnnual ? "#7a8899" : "var(--accent)";
+      if (labelAnnual)
+        labelAnnual.style.color = isAnnual ? "var(--accent)" : "#7a8899";
+
+      document.querySelectorAll(".pricing-price").forEach(function (el) {
+        var price = isAnnual
+          ? el.getAttribute("data-annual")
+          : el.getAttribute("data-monthly");
+        gsap.to(el, {
+          opacity: 0,
+          y: -8,
+          duration: 0.18,
+          ease: "power2.in",
+          onComplete: function () {
+            el.textContent = "$" + price;
+            gsap.to(el, {
+              opacity: 1,
+              y: 0,
+              duration: 0.22,
+              ease: "power2.out",
+            });
+          },
+        });
+      });
+    });
+  }
+
+  gsap.utils.toArray(".pricing-card").forEach(function (card, i) {
+    gsap.from(card, {
+      y: 40,
+      opacity: 0,
+      duration: 0.7,
+      delay: i * 0.15,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: card,
+        start: "top 88%",
+        once: true,
+      },
+    });
+  });
+
+  gsap.utils.toArray(".about-stat").forEach(function (stat, i) {
+    gsap.from(stat, {
+      x: -30,
+      opacity: 0,
+      duration: 0.6,
+      delay: i * 0.12,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: stat,
+        start: "top 90%",
+        once: true,
+      },
+    });
+  });
+})();
